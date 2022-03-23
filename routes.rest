@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/235
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "John Do",
+    "subscribedToChannel": "Fishing"
+}
+
+###
+DELETE http://localhost:3000/subscribers/623ad0e149824117638d671f
+
+###
+PATCH  http://localhost:3000/subscribers/623ad3846c2c8e5ed839c1cc
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "Runing"
+}
